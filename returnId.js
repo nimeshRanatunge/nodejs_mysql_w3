@@ -20,7 +20,7 @@ connection.connect(function(err){
         throw err;
     }
     console.log("db con ok");
-    var sql = "INSERT INTO customers VALUES ('COCACOLA.INC', 'melbern 37')";
+    var sql = "INSERT INTO sellers VALUES (5,'COCACOLA.INC', 'melbern 37')";
     connection.query(sql, function(err, result){
         if(err){
             console.log("table con failed");
