@@ -9,7 +9,7 @@ var conn = mysql.createConnection({
 conn.connect(function(err){
     if(err) throw(err);
     console.log("Connection succeed");
-    var sql = "CREATE TABLE customers (name VARCHAR(255), address VARCHAR(255))";
+    var sql = "CREATE TABLE docker (name VARCHAR(255), address VARCHAR(255))";
     conn.query(sql, function(err, result){
         if(err) throw err;
         console.log("Table created");
